@@ -1,0 +1,43 @@
+.custom_scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+.custom_scrollbar::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+  }
+
+.more_button{
+  /* visibility:hidden; */
+  position: absolute;
+  top:0.5rem;
+  left: -4.5rem;
+  cursor:pointer;
+  color: black;
+  background-color: #ccc;
+  padding: 4px;
+  border-radius:20px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.more_button:hover{
+  visibility: flex;
+}
+.emoji-picker {
+  position: absolute;
+  bottom: 5rem;
+  /* height: 100px; */
+  left: 0;
+  z-index: 1;
+  display: none;
+  max-height: 300px; 
+  overflow: auto;
+
+}
+
+.emoji-picker.visible {
+  display: block;
+}
